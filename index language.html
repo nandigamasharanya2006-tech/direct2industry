@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FarmLink - Direct to Industry</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>🌾 FarmLink</h1>
+      <p class="tagline">Empowering farmers. Connecting to industries. Removing the middlemen.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="hero" class="card hero-card">
+      <div class="hero-left">
+        <h2>Sell direct. Earn fair.</h2>
+        <p>FarmLink helps farmers list crops directly for industries to discover — transparent pricing and faster trade.</p>
+        <div class="buttons">
+          <a id="openFormBtn" class="btn">Register Your Crop</a>
+          <a id="scrollToListings" class="btn ghost">Browse Listings</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <img alt="fields" src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=3f0c1c6b1a8a6f8f8c8e6d6d6a9e1f6a">
+      </div>
+    </section>
+
+    <section id="listings" class="card">
+      <h3>Available Crops</h3>
+      <div id="cropList" class="list-grid">
+        <!-- crops appear here -->
+      </div>
+    </section>
+
+    <section id="formSection" class="card">
+      <h3>Register a Crop</h3>
+      <form id="cropForm" class="form">
+        <label>Farmer Name<input id="farmerName" type="text" placeholder="Your name" required></label>
+        <label>Crop Name<input id="cropName" type="text" placeholder="e.g., Rice, Cotton" required></label>
+        <label>Quantity (kg)<input id="quantity" type="number" placeholder="e.g., 100" required></label>
+        <label>Price (per quintal ₹)<input id="price" type="number" placeholder="e.g., 1500" required></label>
+        <label>Location<input id="location" type="text" placeholder="Village, Mandal, District" required></label>
+        <label>Contact (Phone/WhatsApp)<input id="contact" type="text" placeholder="e.g., 98XXXXXXXX" required></label>
+        <div class="form-actions">
+          <button type="submit" class="btn">Submit Listing</button>
+          <button type="button" id="clearBtn" class="btn ghost">Clear All</button>
+        </div>
+      </form>
+    </section>
+
+    <section id="weatherSection" class="card small-card">
+      <h3>Weather Update (Your Area)</h3>
+      <div id="weather">Detecting location & fetching weather…</div>
+      <p class="muted">Farmers can use this to plan harvest & transport. (Powered by Open-Meteo)</p>
+    </section>
+
+    <section id="benefits" class="card">
+      <h3>Why FarmLink?</h3>
+      <ul>
+        <li>✅ Fair price for farmers</li>
+        <li>✅ Transparent listings & traceability</li>
+        <li>✅ Direct communication with buyers</li>
+        <li>✅ Boost to local rural economy</li>
+      </ul>
+    </section>
+
+    <section id="team" class="card">
+      <h3>Meet the Team</h3>
+      <div class="team-grid">
+        <div class="team-card"><strong>Vasavi</strong><br><span>Project Lead</span></div>
+        <div class="team-card"><strong>Tejaswini</strong><br><span>Web Developer</span></div>
+        <div class="team-card"><strong>Rakesh</strong><br><span>Data Analyst</span></div>
+        <div class="team-card"><strong>Anjali</strong><br><span>Marketing & Outreach</span></div>
+      </div>
+      <p class="muted">(Change names anytime in the code or on GitHub)</p>
+    </section>
+
+    <section id="contact" class="card">
+      <h3>Contact Us</h3>
+      <p>Have ideas or want to collaborate? <br>📧 <a href="mailto:farmlinkteam@gmail.com">farmlinkteam@gmail.com</a><br>📍 Hyderabad, India</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© FarmLink — Direct to Industry | Built for AgriTech Hackathon</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
